@@ -1,5 +1,10 @@
 # comfy_Translation
 
+# 更新 20230414 01:25
+```
+修复关键词没变化时会从新跑关键词流程问题
+```
+
 # 更新 20230413 19:40
 # *更新内容如下*
 ```
@@ -20,11 +25,8 @@ PATH="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 
 ## 3）重启ComfyUI
 ## 打开自定义浏览器，如果配置了openIE.txt，会去获取里面路径打开你想要打开的浏览器，如果没有这个文件，则按默认方式去打开
-## Open the custom browser, if configured with openIE.txt, will go to the inside path to open the browser you want to open
 ## TODO 目前会打开两个浏览器，一个是默认一个是自定义的，需要你手动关闭不想要打开的浏览器
-## TODO currently opens two browsers, one by default and one by custom, requiring you to manually close any browser you don't want to open
 ## 这里很抱歉无法屏蔽ComfyUI去打开默认浏览器，我会尝试找[ComfyUI](https://github.com/comfyanonymous/ComfyUI)的作者看看能否修改一下他们的代码好让我们可以去自定义打开浏览器
-## I'm sorry that I can't block ComfyUI to open the default browser. I will try to find the ComfyUI authors to see if they can modify their code so that we can customize the browser to open
 
 # **安装**
 1、直接下载压缩包
