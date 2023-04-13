@@ -1,5 +1,31 @@
 # comfy_Translation
 
+# 更新 20230413 19:40
+# *更新内容如下*
+```
+1、优化代码
+2、修复生成后的图片带的tag信息为中文问题
+3、增加使用自定义浏览器打开ComfyUI功能
+```
+# 自定义浏览器使用方法
+
+## 1）增加openIE.txt，把**openIE.txt**放到**ComfyUI\custom_nodes**里，修改里面要启动浏览器的路径
+
+## 2）浏览器路径：找到你的浏览器->鼠标右键->打开文件所在位置->复制.exe的路径进来
+
+## 如：
+```
+PATH="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+```
+
+## 3）重启ComfyUI
+## 打开自定义浏览器，如果配置了openIE.txt，会去获取里面路径打开你想要打开的浏览器，如果没有这个文件，则按默认方式去打开
+## Open the custom browser, if configured with openIE.txt, will go to the inside path to open the browser you want to open
+## TODO 目前会打开两个浏览器，一个是默认一个是自定义的，需要你手动关闭不想要打开的浏览器
+## TODO currently opens two browsers, one by default and one by custom, requiring you to manually close any browser you don't want to open
+## 这里很抱歉无法屏蔽ComfyUI去打开默认浏览器，我会尝试找[ComfyUI](https://github.com/comfyanonymous/ComfyUI)的作者看看能否修改一下他们的代码好让我们可以去自定义打开浏览器
+## I'm sorry that I can't block ComfyUI to open the default browser. I will try to find the ComfyUI authors to see if they can modify their code so that we can customize the browser to open
+
 # **安装**
 1、直接下载压缩包
 
