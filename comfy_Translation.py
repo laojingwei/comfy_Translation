@@ -1,7 +1,7 @@
 import json
 import requests
 from nodes import CLIPTextEncode
-import execution
+from execution import PromptExecutor
 
 import webbrowser
 import time
@@ -46,7 +46,7 @@ def recursive_executeDec(func):
 
 # 使用装饰器去修饰recursive_execute方法
 # Use the decorator to decorate recursive_execute
-execution.recursive_execute = recursive_executeDec(execution.recursive_execute)
+PromptExecutor.execute = recursive_executeDec(PromptExecutor.execute)
 
 
 # 定义一个装饰器处理传给ai绘图的内容
